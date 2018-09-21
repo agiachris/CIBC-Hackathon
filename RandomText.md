@@ -1,1 +1,0 @@
-Sam's test file.
