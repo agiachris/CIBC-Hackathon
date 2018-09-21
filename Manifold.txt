@@ -1,4 +1,0 @@
-Manifold:
-
-Idea:
-	- unsupervised estimators that seeks to describe datasets as low-dimensional manifolds embedded in high-dimensional spaces.
