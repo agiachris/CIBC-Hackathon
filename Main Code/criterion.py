@@ -11,4 +11,3 @@ def Number(rawData)
             bicArray.append(m.bic(rawData))
             #aicArray.append(m.aic(rawData))
         return min(bicArray)
-
