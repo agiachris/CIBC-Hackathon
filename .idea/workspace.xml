@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a98b5fb5-3191-4c7f-8f96-4db067929155" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Main Code/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main Code/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main Code/learn.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main Code/learn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main Code/rank.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main Code/rank.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,12 +26,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="25" />
+          <entry key="py" value="203" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="25" />
+          <entry key="Python" value="203" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -71,7 +73,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Main Code/parse.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-792">
+            <state relative-caret-position="-982">
               <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
@@ -83,8 +85,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Main Code/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="604">
-              <caret line="23" column="12" lean-forward="true" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+            <state>
+              <caret column="1" selection-start-column="1" selection-end-column="1" />
               <folding>
                 <element signature="e#37#55#0" expanded="true" />
               </folding>
@@ -95,20 +97,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Main Code/rank.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+            <state relative-caret-position="396">
+              <caret line="11" column="92" selection-start-line="11" selection-start-column="92" selection-end-line="11" selection-end-column="92" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
-                <marker date="1537624374195" expanded="true" signature="88:93" ph="..." />
-                <marker date="1537624374195" expanded="true" signature="436:563" ph="..." />
-                <marker date="1537624374195" expanded="true" signature="561:562" ph="..." />
-                <marker date="1537624374195" expanded="true" signature="1000:1001" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Main Code/criterion.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
@@ -120,11 +118,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Main Code/learn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+            <state relative-caret-position="288">
+              <caret line="8" column="40" lean-forward="true" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -146,6 +144,7 @@
         <option value="$PROJECT_DIR$/Main Code/samstry/parse.py" />
         <option value="$PROJECT_DIR$/Main Code/samstry/samsmain.py" />
         <option value="$PROJECT_DIR$/Main Code/parse.py" />
+        <option value="$PROJECT_DIR$/Main Code/rank.py" />
       </list>
     </option>
   </component>
@@ -346,12 +345,12 @@
     <frame x="1016" y="82" width="2806" height="1663" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23256676" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23256676" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.21611446" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.21611446" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39978448" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -399,23 +398,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Main Code/k-means.py" />
     <entry file="file://$PROJECT_DIR$/Main Code/plot.py" />
-    <entry file="file://$PROJECT_DIR$/Main Code/learn.py">
+    <entry file="file://$PROJECT_DIR$/Main Code/samstry/main.py" />
+    <entry file="file://$PROJECT_DIR$/Main Code/samstry/parse.py" />
+    <entry file="file://$PROJECT_DIR$/Main Code/samstry/samsmain.py" />
+    <entry file="file://$PROJECT_DIR$/Main Code/criterion.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+          <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
           <folding>
-            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Main Code/samstry/main.py" />
-    <entry file="file://$PROJECT_DIR$/Main Code/samstry/parse.py" />
-    <entry file="file://$PROJECT_DIR$/Main Code/samstry/samsmain.py" />
+    <entry file="file://$PROJECT_DIR$/Main Code/rank.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="11" column="92" selection-start-line="11" selection-start-column="92" selection-end-line="11" selection-end-column="92" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Main Code/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="604">
-          <caret line="23" column="12" lean-forward="true" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
           <folding>
             <element signature="e#37#55#0" expanded="true" />
           </folding>
@@ -424,7 +433,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Main Code/parse.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-792">
+        <state relative-caret-position="-982">
           <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
@@ -432,12 +441,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Main Code/criterion.py">
+    <entry file="file://$PROJECT_DIR$/Main Code/learn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+        <state relative-caret-position="288">
+          <caret line="8" column="40" lean-forward="true" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>

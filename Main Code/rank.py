@@ -6,14 +6,27 @@ def Sort(scores, data): 								# Sort entire dataset in increased order of prob
     for i in range(len(data)):
         data[i].append(scores[i])
 
-    for iter_num in range(len(data) - 1, 0, -1):
-        for idx in range(iter_num):
-            if data[idx][8] > data[idx + 1][8]:
-                temp = data[idx]
-                data[idx] = data[idx + 1]
-                data[idx + 1] = temp
+    sorted = QuickSort(data)
+    return sorted
 
-    return data
+def QuickSort(data):                                    # Quick sort implementation O(nlogn)
+    less = []
+    equal = []
+    greater = []
+
+    if len(data) > 1:
+        pivot = data[0][8]
+        for x in data:
+            if x[8] < pivot:
+                less.append(x)
+            if x[8] == pivot:
+                equal.append(x)
+            if x[8] > pivot:
+                greater.append(x)
+        return QuickSort(less)+equal+QuickSort(greater)
+
+    else:
+        return data
 
 def File1(sorted):
     provider_info = parse.F1(sorted)					# Create file1
@@ -22,18 +35,18 @@ def File1(sorted):
 
 def File2(sorted):										# Create file2
     dict = {}
-    for i in range(len(sorted)):
+    for i in range(len(sorted)):						# Create dicitonary of providers and their top 100 anomolies
         if sorted[i][2] not in dict.keys():
             dict[sorted[i][2]] = []
             dict[sorted[i][2]].append(sorted[i])
         else:
             dict[sorted[i][2]].append(sorted[i])
 
-    extracted = []
+    extracted = []										# Extract top 100 from each provider
     for key in dict.keys():
         for i in range(100):
             extracted.append(dict[key][i])
 
-    info = parse.F2(extracted)
+    info = parse.F2(extracted)							# Parse for necessary columns
     df = pd.DataFrame(info)
-    df.to_csv("/home/agiachris/Desktop/file2.csv")
+    df.to_csv("/home/agiachris/Desktop/file2.csv")		
