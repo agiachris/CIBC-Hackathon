@@ -26,9 +26,7 @@ def Extract(data):
     extData = []
     for i in range(len(data)):
         extData.append([])
-        extData[i].append(data[i][2])
-        extData[i].append(data[i][6])
+        extData[i].append(data[i][3])
         extData[i].append(data[i][7])
     ext = np.r_[extData]
-    print(ext)
     return ext
