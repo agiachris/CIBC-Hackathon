@@ -1,4 +1,5 @@
 import csv
+
 DataPath = '/home/%HOMEPATH%/CIBCData/'
 def Parse():
     with open(DataPath+'claims_final.csv') as DataSetFile:
