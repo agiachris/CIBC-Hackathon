@@ -26,4 +26,3 @@ def Normalize():
                     continue
                 row[i] = (row[i] - MinMatrix[i])/(MaxMatrix[i] - MinMatrix[i])
     return DataMatrix
-
