@@ -1,5 +1,4 @@
 # CIBC-Hackathon
-Team collaboration for files related to the CIBC Hackathon
-Testing to see if I can push and merge appropriately.
-
-I'm Svet I'm testing initial changes...
+- this is an unsupervised machine learning project repository
+- the objective of this project is to return the most likely anomalies given the 2006 CIBC Insurance claims dataset
+- the implemented strategy is GMM
