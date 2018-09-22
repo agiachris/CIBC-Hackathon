@@ -5,23 +5,32 @@ def Normalize(dataPath):
     with open(dataPath+'/claims_final.csv') as dataSetFile:
         dataSet = csv.reader(dataSetFile, delimiter=',')
         dataMatrix = []
+        dataDictionary = {}
+        counter = 0
         for entry in dataSet:
             dataMatrix.append(entry)
-        maxMatrix = [0] * 8
-        minMatrix = [0] * 8
-        for row in dataMatrix:
-            row[7] = float(row[7])
-            if row[7] < minMatrix[7]:
-                minMatrix[7] = row[7]
-            if row[7] > maxMatrix[7]:
-                maxMatrix[7] = row[7]
-        for row in dataMatrix:
-            for i in range(0, 8):
-                if i != 7:
-                    continue
-                row[i] = (row[i] - minMatrix[i])/(maxMatrix[i] - minMatrix[i])
-    return dataMatrix
+            if str(dataMatrix[counter][4]) not in dataDictionary.keys():
+                dataDictionary[str(dataMatrix[counter][4])] = list([dataMatrix[counter]])
+            else:
+                dataDictionary[str(dataMatrix[counter][4])].append(dataMatrix[counter])
+            counter += 1
+        countryMax = -1
+        countryMin = -1
+        for value in dataDictionary.values():
+            for row in value:
+                if countryMin == -1:
+                    countryMin = float(row[7])
+                if float(row[7]) < countryMin:
+                    countryMin = float(row[7])
+                if countryMax == -1:
+                    countryMax = float(row[7])
+                if float(row[7]) > countryMax:
+                    countryMax = float(row[7])
+            for row in value:
+                row[7] = float(float(row[7]) - countryMin)/(countryMax - countryMin)
+    return dataDictionary
 
+print(dataDictionary)
 def Extract(data):
     extData = []
     for i in range(len(data)):
