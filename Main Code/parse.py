@@ -30,12 +30,15 @@ def Normalize(dataPath):
                 row[7] = float(float(row[7]) - countryMin)/(countryMax - countryMin)
     return dataDictionary
 
-print(dataDictionary)
 def Extract(data):
     extData = []
     for i in range(len(data)):
         extData.append([])
+        extData[i].append(data[i][0])
+        extData[i].append(data[i][2])
         extData[i].append(data[i][3])
+        extData[i].append(data[i][5])
+        extData[i].append(data[i][6])
         extData[i].append(data[i][7])
     ext = np.r_[extData]
     return ext
