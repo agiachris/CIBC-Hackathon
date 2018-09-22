@@ -1,5 +1,5 @@
 import csv
-DataPath = '/home/%HOMEPATH%/Desktop/CIBCData/'
+DataPath = '/home/%HOMEPATH%/CIBCData/'
 def Parse():
     with open(DataPath+'claims_final.csv') as DataSetFile:
         DataSet = csv.reader(DataSetFile, delimiter=',')
