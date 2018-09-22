@@ -1,6 +1,5 @@
 import parse
 import pandas as pd
-import numpy as np
 
 def Sort(scores, data):
     # Append scores to dataset
@@ -32,10 +31,9 @@ def File2(sorted):
 
     extracted = []
     for key in dict.keys():
-        for i in range(1):
+        for i in range(100):
             extracted.append(dict[key][i])
 
     info = parse.F2(extracted)
-    print(info)
     df = pd.DataFrame(info)
     df.to_csv("/home/agiachris/Desktop/file2.csv")

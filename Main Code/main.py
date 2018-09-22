@@ -12,7 +12,7 @@ if __name__ == "__main__":
 	for key in X.keys():										# iterate over datasets
 		print(key)
 		currData = X[key]
-		currData = currData[:100]								# Number of data points to splice
+		#currData = currData[:100]								# Number of data points to splice
 		stored_data += currData
 		extData = parse.Extract(currData)						# Extract required data (doctor type, price)
 		#n = criterion.Number(extData)							# Figuring out the best posibble criterion
