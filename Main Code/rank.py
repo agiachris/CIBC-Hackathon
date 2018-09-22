@@ -44,7 +44,7 @@ def File2(sorted):										# Create file2
 
     extracted = []										# Extract top 100 from each provider
     for key in dict.keys():
-        for i in range(100):
+        for i in range(100):                            # or len(dict[key]) if decreased dataset
             extracted.append(dict[key][i])
 
     info = parse.F2(extracted)							# Parse for necessary columns

@@ -12,7 +12,7 @@ if __name__ == "__main__":
 	for key in X.keys():										# Iterate over four datasets
 		print(key)
 		currData = X[key]
-		#currData = currData[:100]								# Training spliced datasets
+		#currData = currData[:10000]								# Training spliced datasets
 		stored_data += currData
 		extData = parse.Extract(currData)						# Extract required data (doctor type, price)
 		#n = criterion.Number(extData)							# Obtain optimal number of Gaussian Components
