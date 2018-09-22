@@ -1,15 +1,11 @@
 import numpy as np
-from sklearn.mixture import GMM
+from sklearn.mixture import GaussianMixture
 
 def Number(rawData):
     bicArray = []
-    # aicArray = []
-    n_components = np.arange(1, 20)
-    # models = [GMM(n, covariance_type='full', random_state=0).fit(rawData) for n in n_components]
-    print ("In CRIT")
-    for m in range(21):
-        bicArray.append(GMM(m, covariance_type='full', random_state=0).fit(rawData))
-        # bicArray.append(m.bic(rawData))
-        #aicArray.append(m.aic(rawData))
-    print("OH MA NAME")
-    return min(bicArray)
+    n_components = np.arange(1, 100)
+    for i in range(len(n_components)):
+        model = GaussianMixture(n_components=i+1, covariance_type='full', random_state=0).fit(rawData)
+        bicArray.append(model.bic(rawData))
+        # Possible Parameters: max_iter
+    return bicArray.index(min(bicArray))
