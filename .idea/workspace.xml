@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a98b5fb5-3191-4c7f-8f96-4db067929155" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/CIBC-Hackathon.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CIBC-Hackathon.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main Code/learn.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main Code/learn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main Code/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main Code/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main Code/rank.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main Code/rank.py" afterDir="false" />
-    </list>
+    <list default="true" id="a98b5fb5-3191-4c7f-8f96-4db067929155" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,10 +117,10 @@
               <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
-                <marker date="1537609883051" expanded="true" signature="88:93" ph="..." />
-                <marker date="1537609883051" expanded="true" signature="436:563" ph="..." />
-                <marker date="1537609883051" expanded="true" signature="561:562" ph="..." />
-                <marker date="1537609883051" expanded="true" signature="1000:1001" ph="..." />
+                <marker date="1537624046438" expanded="true" signature="88:93" ph="..." />
+                <marker date="1537624046438" expanded="true" signature="436:563" ph="..." />
+                <marker date="1537624046438" expanded="true" signature="561:562" ph="..." />
+                <marker date="1537624046438" expanded="true" signature="1000:1001" ph="..." />
               </folding>
             </state>
           </provider>
@@ -497,10 +490,10 @@
           <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
-            <marker date="1537609883051" expanded="true" signature="88:93" ph="..." />
-            <marker date="1537609883051" expanded="true" signature="436:563" ph="..." />
-            <marker date="1537609883051" expanded="true" signature="561:562" ph="..." />
-            <marker date="1537609883051" expanded="true" signature="1000:1001" ph="..." />
+            <marker date="1537624046438" expanded="true" signature="88:93" ph="..." />
+            <marker date="1537624046438" expanded="true" signature="436:563" ph="..." />
+            <marker date="1537624046438" expanded="true" signature="561:562" ph="..." />
+            <marker date="1537624046438" expanded="true" signature="1000:1001" ph="..." />
           </folding>
         </state>
       </provider>
