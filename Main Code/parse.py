@@ -1,4 +1,5 @@
 import csv
+import numpy as np
 
 def Normalize(DataPath):
     with open(DataPath+'/claims_final.csv') as DataSetFile:
@@ -31,11 +32,9 @@ def Extract(Data):
     extData = []
     for i in range(len(Data)):
         extData.append([])
-        for j in range(len(Data[0])):
-            if j == 2:
-                extData[i].append(Data[i][j])
-            elif j == 6:
-                extData[i].append(Data[i][j])
-            elif j == 7:
-                extData[i].append(Data[i][j])
-    return extData
+        extData[i].append(Data[i][2])
+        extData[i].append(Data[i][6])
+        extData[i].append(Data[i][7])
+    ext = np.r_[extData]
+    print(ext)
+    return ext

@@ -7,6 +7,6 @@ if __name__ == "__main__":
 	X = parse.Normalize('/home/agiachris/CIBCData')
 	data = X[:3000]
 	extData = parse.Extract(data)
-	print(extData)
 	n = criterion.Number(extData)
+	print(n)
 	learn.Learn(extData, n)
