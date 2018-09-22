@@ -5,7 +5,8 @@ import learn
 
 if __name__ == "__main__":
 	X = parse.Normalize('/home/agiachris/CIBCData')
-	print (X)
-	Data = X[:3000,[2, 6, 7]]
-	n = criterion.Number(Data)
-	learn.Learn(Data, n)
+	data = X[:3000]
+	extData = parse.Extract(data)
+	print(extData)
+	n = criterion.Number(extData)
+	learn.Learn(extData, n)

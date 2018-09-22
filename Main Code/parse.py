@@ -26,3 +26,16 @@ def Normalize(DataPath):
                     continue
                 row[i] = (row[i] - MinMatrix[i])/(MaxMatrix[i] - MinMatrix[i])
     return DataMatrix
+
+def Extract(Data):
+    extData = []
+    for i in range(len(Data)):
+        extData.append([])
+        for j in range(len(Data[0])):
+            if j == 2:
+                extData[i].append(Data[i][j])
+            elif j == 6:
+                extData[i].append(Data[i][j])
+            elif j == 7:
+                extData[i].append(Data[i][j])
+    return extData
