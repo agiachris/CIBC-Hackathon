@@ -12,8 +12,8 @@ if __name__ == "__main__":
 	for key in X.keys():										# iterate over datasets
 		print(key)
 		currData = X[key]
+		currData = currData[:100]								# Number of data points to splice
 		stored_data += currData
-		currData = currData[:100]
 		extData = parse.Extract(currData)						# Extract required data (doctor type, price)
 		#n = criterion.Number(extData)							# Figuring out the best posibble criterion
 		if key == 'NY':
@@ -21,4 +21,6 @@ if __name__ == "__main__":
 		else:
 			score_records = np.r_[score_records, (learn.Learn(extData, 50, key))]			# Cluster, plot, and store
 
-	rank.Rank(score_records, stored_data)
+	sorted_data = rank.Sort(score_records, stored_data)
+	rank.File1(sorted_data)
+	rank.File2(sorted_data)
