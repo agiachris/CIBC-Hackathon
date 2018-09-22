@@ -1,8 +1,7 @@
 import csv
 
-DataPath = '/home/%HOMEPATH%/CIBCData/'
-def Parse():
-    with open(DataPath+'claims_final.csv') as DataSetFile:
+def Normalize(DataPath):
+    with open(DataPath+'/claims_final.csv') as DataSetFile:
         DataSet = csv.reader(DataSetFile, delimiter=',')
         DataMatrix = []
         for entry in DataSet:
