@@ -1,7 +1,7 @@
 import parse
 import pandas as pd
 
-def Sort(scores, data):
+def Sort(scores, data): 								# Sort entire dataset in increased order of probability
     # Append scores to dataset
     for i in range(len(data)):
         data[i].append(scores[i])
@@ -16,11 +16,11 @@ def Sort(scores, data):
     return data
 
 def File1(sorted):
-    provider_info = parse.F1(sorted)
+    provider_info = parse.F1(sorted)					# Create file1
     df = pd.DataFrame(provider_info)
     df.to_csv("/home/agiachris/Desktop/file1.csv")
 
-def File2(sorted):
+def File2(sorted):										# Create file2
     dict = {}
     for i in range(len(sorted)):
         if sorted[i][2] not in dict.keys():
