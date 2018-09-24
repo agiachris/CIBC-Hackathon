@@ -31,7 +31,7 @@ def QuickSort(data):                                    # Quick sort implementat
 def File1(sorted):
     provider_info = parse.F1(sorted)					# Create file1
     df = pd.DataFrame(provider_info)
-    df.to_csv("/home/agiachris/Desktop/file1.csv")
+    df.to_csv("/home/agiachris/projects/CIBC-Hackathon/Results/file1.csv")
 
 def File2(sorted):										# Create file2
     dict = {}
@@ -44,9 +44,13 @@ def File2(sorted):										# Create file2
 
     extracted = []										# Extract top 100 from each provider
     for key in dict.keys():
-        for i in range(100):                            # or len(dict[key]) if decreased dataset
+        if len(dict[key]) > 100:
+            x = 100
+        else:
+            x = len(dict[key])
+        for i in range(x):
             extracted.append(dict[key][i])
 
     info = parse.F2(extracted)							# Parse for necessary columns
     df = pd.DataFrame(info)
-    df.to_csv("/home/agiachris/Desktop/file2.csv")		
+    df.to_csv("/home/agiachris/projects/CIBC-Hackathon/Results/file2.csv")
